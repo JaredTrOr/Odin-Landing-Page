@@ -160,3 +160,54 @@ a {
     font-weight: bolder;
 }
 
+/*MODAL STYLES*/
+.modal{
+    padding: 10rem 0;
+}
+
+.modal-content{
+    background-color: yellow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content-modal{
+    flex: 1;
+}
+
+.modal-left-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-sign-up{
+    width: 40%;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.modal-sign-up:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+
