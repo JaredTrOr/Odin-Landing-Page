@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/*GENERAL STYLES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    margin: auto;
+    padding: 2rem;
+    width: 90%;
+}
+
+.small-container{
+    margin: auto;
+    padding: 2rem;
+    width: 70%;
+}
+
+/*TOP CONTENT STYLES*/
+.top-container {
+    background-color: #eeee;
+    padding-bottom: 10rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    background-color: yellow;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.header-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.content{
+    flex: auto;
+    width: 400px;
+    height: 350px;
+}
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-two{
+    border-radius: 10px;
+    background-image: url('./images/weird-robot-man.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.egg-image{
+    max-width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sign-up {
+    border: 2px solid black;
+    width: 8rem;
+    background-color: transparent;
+    font-weight: bolder;
+    transition: 0.1s ease-in-out;
+}
+
+.sign-up:hover{
+    border: 2px solid yellow;
+    background-color: yellow;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+/*INFORMATION CONTENT STYLES*/
+.information-container {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card-image{
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.card-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-information{
+    width: 300px;
+    flex: auto; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+/*QUOTE STYLES*/
+.quote{
+    background-color: black;
+    color: white;
+    padding: 10rem 0;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.author-text{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
