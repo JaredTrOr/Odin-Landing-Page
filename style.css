@@ -12,6 +12,7 @@
 a {
     text-decoration: none;
     color: black;
+    transition: 0.1s ease-out;
 }
 
 /*UTILITY CLASSES-----------------------------------------------------------*/
@@ -41,10 +42,17 @@ a {
 /*TOP CONTENT STYLES---------------------------------------------------*/
 .top-container {
     background-color: #eeee;
-    padding-bottom: 10rem;
+    padding: 5rem 0 10rem 0;
 }
 
 .header{
+    background-color: rgba(238, 238, 238, 1); /* full opacity */
+    position: sticky;
+    top: 0;
+    z-index: 1; /*This is used to avoid the images from overlapping with the nav*/
+}
+
+.header-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,13 +96,10 @@ a {
 
 .content-two{
     border-radius: 10px;
-    background-image: url('./images/weird-robot-man.jpg');
+    background-image: url('./images/programmer.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-}
-
-.egg-image{
-    max-width: 100%;
 }
 
 .sign-up {
@@ -115,6 +120,10 @@ a {
     font-weight: bolder;
 }
 
+.header .header-links a:hover{
+    border-bottom: 3px solid purple;
+}
+
 /*INFORMATION CONTENT STYLES-------------------------------------------------*/
 .information-container {
     padding: 10rem 0;
@@ -128,8 +137,17 @@ a {
 .card-image{
     width: 250px;
     height: 200px;
-    border: 3px solid black;
     border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card-image:hover{
+    transform: scale(1.1);
 }
 
 .card-container{
@@ -146,8 +164,26 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
+    gap: 1rem;
 }
+
+.card-one {
+    background-image: url('./images/js-logo.png');
+}
+
+.card-two {
+    background-image: url('./images/zelda.jpeg');
+}
+
+.card-three {
+    background-image: url('./images/tacos.jpeg');
+}
+
+.card-four {
+    background-image: url('./images/developer.jpeg');
+}
+
+
 
 /*QUOTE STYLES----------------------------------------------------------*/
 .quote{
