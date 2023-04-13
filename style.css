@@ -310,7 +310,7 @@ a {
         position: absolute;
         flex-direction: column;
         align-items: flex-end;
-        right: -100%;
+        left: -100%;
     }
 
     .line-one.active {
@@ -326,7 +326,7 @@ a {
     }
 
     .header-links.active {
-        right: 0;
+        left: 0;
     }
 
     .hamburger{
