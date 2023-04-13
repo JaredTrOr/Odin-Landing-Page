@@ -42,7 +42,7 @@ a {
 /*TOP CONTENT STYLES---------------------------------------------------*/
 .top-container {
     background-color: #eeee;
-    padding: 5rem 0 10rem 0;
+    padding: 3rem 0 10rem 0;
 }
 
 .header{
@@ -79,7 +79,7 @@ a {
 .content-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .content{
@@ -215,6 +215,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+.modal-right-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .modal-title{
