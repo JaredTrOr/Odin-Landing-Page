@@ -76,6 +76,8 @@ a {
 .header-links{
     display: flex;
     gap: 1rem;
+
+    transition: 0.2s ease;
 }
 
 .top-content{
@@ -267,7 +269,69 @@ a {
     padding: 3rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+/*HAMBURGER-----------------------------------------------------------------------*/
+.hamburger{
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.line{
+    margin-bottom: 5px;
+    width: 95%;
+    height: 5px;
+    background-color: black;
+}
+
+.visible{
+    display: flex;
+}
+
+.no-visible{
+    display: none;
+}
+
+.line{
+    transition: 0.2s ease;
+}
+
+@media(max-width: 810px){
+    
+    .header-links{
+        padding: 2rem 3.4rem;
+        background-color: rgba(238, 238, 238, 1);
+        width: 100%;
+        margin-top: 13rem;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-end;
+        right: -100%;
+    }
+
+    .line-one.active {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .line-two.active {
+        opacity: 0;
+    }   
+
+    .line-three.active {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    .header-links.active {
+        right: 0;
+    }
+
+    .hamburger{
+        display: block;
+    }
 }
 
 
