@@ -19,6 +19,10 @@ a {
     text-align: justify;
 }
 
+.center{
+    text-align: center;
+}
+
 /*UTILITY CLASSES-----------------------------------------------------------*/
 .aws{
     border-bottom: 10px solid yellow;
@@ -130,7 +134,7 @@ a {
 
 /*INFORMATION CONTENT STYLES-------------------------------------------------*/
 .information-container {
-    padding: 10rem 0;
+    padding: 10rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +160,7 @@ a {
 
 .card-container{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
